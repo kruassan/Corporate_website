@@ -13,6 +13,8 @@ namespace Corporate_website_MVC
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+			
+			ControllerBuilder.Current.SetControllerFactory(new Corporate_website_Domain.NinjectControllerFactory());
         }
     }
 }

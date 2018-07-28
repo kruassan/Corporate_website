@@ -9,6 +9,7 @@ namespace Corporate_website_UnitTests
 		[TestMethod]
 		public void TestMethod1()
 		{
+
 		}
 	}
 }
