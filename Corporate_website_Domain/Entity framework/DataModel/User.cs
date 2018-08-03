@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 using System.Threading.Tasks;
 
-namespace Beg2.Entity_framework.DataModel
+namespace Corporate_website_Domain.EntityFramework.Models
 {
 	[Serializable]
 	[Table("User", Schema = "public")]

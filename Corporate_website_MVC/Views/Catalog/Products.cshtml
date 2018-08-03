@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Corporate_website_Domain.EntityFramework.Models.User>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Products</title>
+</head>
+<body>
+	<div>
+		ITS WORKING!
+		@if (Model != null && Model.Count() != 0)
+		{
+			foreach (Corporate_website_Domain.EntityFramework.Models.User item in Model)
+			{
+				
+				<div>
+					<h1>@item.Login</h1>
+					<h3>@item.Pass_hash</h3>
+				</div>
+			}
+		}
+	</div>
+</body>
+</html>

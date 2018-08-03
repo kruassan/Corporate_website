@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Beg2.Entity_framework.DataModel
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Corporate_website_Domain.EntityFramework.Models
 {
+	[Serializable]
+	[Table("News", Schema = "public")]
 	public class News
 	{
 		public long? Id { get; set; }
