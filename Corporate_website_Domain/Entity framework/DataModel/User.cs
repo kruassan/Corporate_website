@@ -24,7 +24,7 @@ namespace Corporate_website_Domain.EntityFramework.Models
 
 		public bool? Banned { get; set; }
 
-		public DateTime? Ban_end { get; set; }
+		public long? Ban_data_id { get; set; }
 
 		public long? Id { get; set; }
 

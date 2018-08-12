@@ -12,7 +12,9 @@ namespace Corporate_website_MVC
     public class MvcApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
-        {
+		{
+			//System.Windows.Forms.MessageBox.Show(new ECorp_DataModelContext("public").Users.First().Login); // test db connection
+
 			AreaRegistration.RegisterAllAreas();
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
 
